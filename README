@@ -1,0 +1,5 @@
+# CyA-P08-GramaticasFNC
+Programa el cual a partir de un archivo de texto que contiene una gramática
+realiza una conversion a un archivo de texto que contiene la gramática en
+forma normal de Chomsky.
+El imput3 es el que tiene producciones unitarias y producciones vacias
