@@ -6,11 +6,11 @@ S
 A
 B
 8
-S -> bA
-S -> aB
-A -> bAA
-A -> aS
+S -> A
+S -> B
+A -> aAb
+A -> aA
 A -> a
-B -> aBB
-B -> bS
+B -> aBb
+B -> bB
 B -> b

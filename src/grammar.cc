@@ -91,7 +91,10 @@ bool Grammar::CheckGrammar() {
     for (auto& j : i.second) {
       if (j.size() == 1) {
         /// si tiene producciones vacias y no es la inicial
-        if (j[0].GetSymbol() == kEpsilon && i.first.GetSymbol() != kInitialString_) { 
+        if (j[0].GetSymbol() == "&" && i.first.GetSymbol() != kInitialString_) {
+          /// mostrar por pantalla la regla que tiene producciones vacias
+
+          std::cout << "La regla " << i.first.GetSymbol() << " tiene producciones vacias" << std::endl;
           return false;
         }
       }
@@ -101,7 +104,17 @@ bool Grammar::CheckGrammar() {
     for (auto& j : i.second) {
       if (j.size() == 1) {
         /// si tiene producciones unitarias
+        if (j[0].GetSymbol() == kEpsilon) {
+          /// mostrar por pantalla la regla que tiene producciones vacías
+          /// (no se por que no funciona arriba pero aquí sí)
+          std::cout << "La regla " << i.first.GetSymbol() << " tiene producciones vacías" << std::endl;
+          return false;
+        }
         if (j[0].GetSymbol() != kEpsilon && nonterminals_.find(j[0]) != nonterminals_.end()) {
+          /// mostrar por pantalla la regla que tiene producciones unitarias
+          std::cout << "La regla " << i.first.GetSymbol() << " tiene producciones unitarias" << std::endl;
+          /// mostrar la produccion unitaria
+          std::cout << i.first.GetSymbol() << " -> " << j[0].GetSymbol() << std::endl;
           return false;
         }
       }
@@ -120,6 +133,7 @@ void Grammar::ChomskyNormalForm() {
     std::cout << "La gramatica no es correcta" << std::endl;
     std::cout << "Asegurate de que no tenga producciones vacias y" << std::endl;
     std::cout << "que no tenga producciones unitarias" << std::endl;
+    return;
   } else {
     int counter_non_terminals{0};
     for (auto& i : productions_) {

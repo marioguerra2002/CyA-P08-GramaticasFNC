@@ -1,19 +1,20 @@
 2
 a
 b
-5
+3
 S
 A
 B
-C
-D
-9
-S -> aAB
-A -> BAb
-A -> &
-A -> B
-B -> a
+12
+S -> aAb
+S -> b
+S -> a
+S -> aA
+S -> aBb
+S -> bB
 B -> b
-B -> CD
-C -> ba
-D -> DD
+B -> bB
+B -> aBb
+A -> a
+A -> aA
+A -> aAb
