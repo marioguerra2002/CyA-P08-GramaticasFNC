@@ -1,0 +1,54 @@
+3
+a
+b
+c
+19
+S
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+X
+Y
+19
+S -> AM
+S -> CN
+S -> EO
+S -> GH
+A -> a
+B -> b
+C -> a
+D -> b
+E -> a
+F -> b
+G -> a
+H -> b
+I -> a
+J -> b
+K -> a
+L -> b
+M -> XP
+N -> DX
+O -> XF
+P -> BX
+X -> IY
+X -> JY
+X -> a
+X -> b
+Y -> KY
+Y -> LY
+Y -> a
+Y -> b
+Y -> c
