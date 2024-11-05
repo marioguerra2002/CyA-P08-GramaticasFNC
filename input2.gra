@@ -6,7 +6,7 @@ S
 A
 B
 8
-S -> A
+S -> &
 S -> B
 A -> aAb
 A -> aA
